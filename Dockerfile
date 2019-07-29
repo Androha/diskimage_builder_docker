@@ -16,3 +16,4 @@ RUN apt-get update && apt-get install -y \
 && git clone https://opendev.org/openstack/diskimage-builder.git dib \
 && cd dib && pip3 install -r requirements.txt \
 && python3 setup.py install
+ENTRYPOINT ["/bin/bash"]
